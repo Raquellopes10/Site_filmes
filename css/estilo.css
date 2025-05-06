@@ -6,7 +6,7 @@ body{
 p{
     color: black;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
    
 }
 
@@ -23,4 +23,12 @@ h2{
     max-height: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 200px;
+
+  }
+
+  .card {
+    width: 200px;
+    height: 400px;
+    overflow: hidden; /* para cortar texto que passar do limite */
   }
