@@ -3,8 +3,10 @@ body{
 }
 
 
-h1{
-    color: white;
+p{
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
    
 }
 
