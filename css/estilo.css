@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: white
 }
 
 
@@ -31,4 +31,8 @@ h2{
     width: 200px;
     height: 400px;
     overflow: hidden; /* para cortar texto que passar do limite */
+  }
+
+  .navbar-brand{
+    color: red
   }
