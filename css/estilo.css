@@ -1,43 +1,45 @@
-body{
-    background-color: white
+.card {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 320px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-
-p{
-    color: black;
-    text-align: left;
-    font-size: 1.9rem;
-   
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
 }
 
-.cor1{
-    background-color: black;
-}
-
-h2{
-    color: #000;
+.card-body {
+  padding: 10px;
+  text-align: center;
 }
 
 .card-body p {
-    font-size: 0.85rem;
-    max-height: 100px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 200px;
+  font-size: 0.85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
 
-  }
-
+/* Responsivo */
+@media (max-width: 576px) {
   .card {
-    width: 200px;
-    height: 400px;
-    overflow: hidden; /* para cortar texto que passar do limite */
+    width: 70vw;
+    height: auto;
   }
 
-  .navbar-brand{
-    color: red
+  .card-img-top {
+    height: 140px;
   }
 
-  .carousel-item .row {
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  .card-body p {
+    font-size: 0.75rem;
+  }
 }
