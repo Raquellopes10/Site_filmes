@@ -1,13 +1,15 @@
 
     body {
-      background-color: #141414;
-      color: white;
+      background-color: white;
+      color: black;
       font-family: Arial, sans-serif;
     }
 
     h2 {
       margin-left: 20px;
       margin-bottom: 10px;
+      font-weight: bolder;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     .swiper {
@@ -21,6 +23,7 @@
       overflow: hidden;
       flex-shrink: 0;
       transition: transform 0.3s ease;
+      margin-bottom:40px;
     }
 
     .swiper-slide img {
@@ -33,3 +36,39 @@
     .swiper-button-prev {
       color: white;
     }
+
+    /*cards com os nomes das series */
+  .card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 10pxs;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img{
+  transform: scale(4.05);
+}
+
+.card-title {
+  position: absolute;
+  bottom: 0; /* pode usar 'top: 0' se quiser no topo */
+  left: 0;
+  right: 0;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
