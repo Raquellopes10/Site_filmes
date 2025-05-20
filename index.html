@@ -83,97 +83,56 @@
 
   <br><br>
 
+   <h2>Dramas estrangeiros para TV com romance</h2>
   <div class="swiper mySwiper">
-  <div class="swiper-wrapper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/101764.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/2331295.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/81gFI3WDIDL._AC_UF1000,1000_QL80_.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/aladdingoo.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/como-eu-era-antes-de-voce.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/A-Pequena-Sereia-Halle-Bailey-como-Ariel-em-poster-do-live-action-da-Disney.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/101764.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/2331295.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/81gFI3WDIDL._AC_UF1000,1000_QL80_.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/aladdingoo.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/como-eu-era-antes-de-voce.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/A-Pequena-Sereia-Halle-Bailey-como-Ariel-em-poster-do-live-action-da-Disney.jpg" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 
-    <!-- Card 1 -->
-    <div class="swiper-slide">
-      <div class="card h-100">
-        <img src="img/black_mirror.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-        </div>
-      </div>
+  <!-- Categoria 2 -->
+  <h2>Continuar assistindo como Quel</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://via.placeholder.com/220x120?text=A" alt=""></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/220x120?text=B" alt=""></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/220x120?text=C" alt=""></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/220x120?text=D" alt=""></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/220x120?text=E" alt=""></div>
     </div>
-
-    <!-- Card 2 -->
-    <div class="swiper-slide">
-      <div class="card h-100">
-        <img src="img/black_mirror.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Outro card</h5>
-          <p class="card-text">Outro conteúdo aqui.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="swiper-slide">
-      <div class="card h-100">
-        <img src="img/black_mirror.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Outro card</h5>
-          <p class="card-text">Outro conteúdo aqui.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="swiper-slide">
-      <div class="card h-100">
-        <img src="img/black_mirror.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Outro card</h5>
-          <p class="card-text">Outro conteúdo aqui.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="swiper-slide">
-      <div class="card h-100">
-        <img src="img/black_mirror.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Outro card</h5>
-          <p class="card-text">Outro conteúdo aqui.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="swiper-slide">
-      <div class="card h-100">
-        <img src="img/black_mirror.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Outro card</h5>
-          <p class="card-text">Outro conteúdo aqui.</p>
-        </div>
-      </div>
-    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <script>
-  new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      }
-    }
-  });
-</script>
-
+    const carrossels = document.querySelectorAll('.mySwiper');
+    carrossels.forEach((element) => {
+      new Swiper(element, {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        navigation: {
+          nextEl: element.querySelector('.swiper-button-next'),
+          prevEl: element.querySelector('.swiper-button-prev'),
+        },
+        freeMode: true,
+        grabCursor: true,
+      });
+    });
+  </script>
 </body>
 
 </html>
