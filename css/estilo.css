@@ -17,6 +17,11 @@ body {
   background-color: #fff;
 }
 
+.nav-link{
+  text-decoration: none;
+  color: black;
+}
+
 .flix-container {
   position: relative;
   width: 100vw;         /* Ocupa 100% da largura da tela */
