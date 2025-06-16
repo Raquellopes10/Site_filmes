@@ -1,74 +1,91 @@
 
-    body {
-      background-color: white;
-      color: black;
-      font-family: Arial, sans-serif;
-    }
+   body {
+  background-color: #14171a;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
 
-    h2 {
-      margin-left: 20px;
-      margin-bottom: 10px;
-      font-weight: bolder;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+   * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-    .swiper {
-      padding-left: 20px;
-    }
+body {
+  background-color: #14171a;
+}
 
-    .swiper-slide {
-      width: 220px !important;
-      height: 120px;
-      border-radius: 5px;
-      overflow: hidden;
-      flex-shrink: 0;
-      transition: transform 0.3s ease;
-      margin-bottom:40px;
-    }
-
-    .swiper-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: white;
-    }
-
-    /*cards com os nomes das series */
-  .card {
+.flix-container {
   position: relative;
+  width: 100vw;         /* Ocupa 100% da largura da tela */
+  height: 100vh;        /* Ocupa 100% da altura da tela */
+  background-color: white;
   overflow: hidden;
+}
+
+.flix-items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5000px;
+  text-align: center;
+}
+.flix-items li {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  list-style: none;
+  width: 300px;
+  height: 180px;
+  background-color: black;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.flix-items li .bg-img {
+  position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 10pxs;
+  background-size: cover;
+  background-position: center top;
 }
-
-.card img {
+.flix-items li:hover {
+  transition-delay: 0.5s;
+  width: 450px;
+  height: 300px;
+}
+.flix-items li:hover a .content {
+  transform: translateY(0) translateX(-50%);
+  transition-delay: 0.75s;
+  opacity: 1;
+}
+.flix-items li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
-
-.card:hover img{
-  transform: scale(4.05);
-}
-
-.card-title {
+.flix-items li a .content {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  width: 100%;
+  height: 100px;
   position: absolute;
-  bottom: 0; /* pode usar 'top: 0' se quiser no topo */
-  left: 0;
-  right: 0;
-  padding: 8px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  bottom: 0;
+  left: 50%;
+  transform: translateY(100%) translateX(-50%);
+  transition-duration: 1s;
+  opacity: 0;
+  padding: 40px 10px 10px 10px;
+  width: 400px;
+}
+.flix-items li a .content h2 {
+  font-weight: 300;
+  color: white;
+  font-size: 30px;
 }
