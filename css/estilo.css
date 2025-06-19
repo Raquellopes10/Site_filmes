@@ -25,3 +25,13 @@
    z-index: 1;
    width: 100%;
 }
+
+h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.titulo{
+  background-color: black;
+  width: 100%;
+}
