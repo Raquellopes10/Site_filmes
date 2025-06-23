@@ -34,44 +34,49 @@ h2{
 
 
 /*cards*/
-.card {
-  width: 400px;
-  height: 400px;
-  border: 1px solid #ccc;
-  overflow: hidden; /* Esconde o excesso da imagem */
-  margin-left: 50px; /* Espaçamento à direita */
+.movie-card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-.card-image {
+.movie-card img {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center; /* Centraliza a imagem */
+  object-fit: cover;
+  display: block;
 }
 
-.card-content {
-  padding: 10px;
-}
-
-
-
-.card-title {
-  position: relative;
-  bottom: 0;
+.movie-card .overlay {
+  position: absolute;
+  top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vw;
-  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fundo escuro translúcido */
   color: white;
-  padding: 5px;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  display: flex; /* Inicialmente invisível */
-  transition: display 0.3s ease; /* Transição suave */
-  z-index: 9999;
-  display: none;
 }
 
-.card:hover .card-title {
-  display: flex; /* Exibe o título ao passar o mouse */
+.movie-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overlay-text {
+  font-size: 14px;
 }
