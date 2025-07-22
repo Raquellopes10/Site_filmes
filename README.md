@@ -2,7 +2,7 @@
 
 Um projeto de site de filmes desenvolvido com foco em layout moderno, cards de filmes, e navegação simples e responsiva.
 
-🔗 Acesse o projeto online: [site-filmes-zeta.vercel.app](https://site-filmes-zeta.vercel.app/)
+🔗 Acesse o projeto online: [site-filmes-zeta.vercel.app]()
 
 ## ✨ Funcionalidades
 
