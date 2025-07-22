@@ -1,0 +1,102 @@
+.container{
+    background-color: black;
+}
+
+
+.navbar{
+  position: fixed;
+   z-index: 1;
+   width: 100%;
+}
+
+.autor{
+    color: #808080;
+    font-family: Poppies;
+}
+
+.comment-section {
+  width: 60%;
+  margin: auto;
+  font-family: Arial;
+}
+.comment-form input, .comment-form textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+}
+.comment {
+  display: flex;
+  margin-top: 20px;
+}
+.comment img {
+  width: 50px;
+  border-radius: 50%;
+}
+.comment-body {
+  margin-left: 15px;
+}
+.comment-body h4 span {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.butao{
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: Poopies;
+}
+
+.footer{
+    background-color: black;
+}
+
+
+aside {
+  position: fixed;        /* Faz o aside "grudar" na tela */
+  top: 50px;              /* Distância do topo da tela */
+  right: 20px;            /* Distância da lateral direita */
+  width: 250px;           /* Largura do aside */
+  height: 950px;          /* Altura desejada */
+  background-color: #f7f7f7; /* Cor de fundo opcional */
+  padding: 20px;
+  box-shadow: 0px 0px 10px solid #ccc;
+  border-radius: 8px;
+  border-left: 2px solid #00aaff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #004466;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.card ul li a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card ul li a:hover {
+  color: #004466;
+}
