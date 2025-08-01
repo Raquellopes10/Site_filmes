@@ -1,12 +1,11 @@
-
-  body {
+body {
   background-color: #fff;
   margin: 0;
   padding: 0;
   height: 100vh;
 }
 
-  * {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -14,30 +13,60 @@
 }
 
 
-.nav-link{
+.nav-link {
   text-decoration: none;
   color: white;
-  
+  margin: 0 16px;
+  font-weight: 500;
+  transition: color 0.3 ease;
+
 }
 
-.navbar-brand{
+.nav-item-login{
+  margin-left: 800px;
+  color: white;
+ 
+}
+
+.btn{
+  background-color: #111827;
+  border: 1px solid white;
+}
+
+
+.navbar-brand {
   color: white;
 }
 
-.navbar{
+.navbar {
   position: fixed;
-   z-index: 1;
-   width: 100%;
-   background-color: #111827;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   
+  z-index: 1;
+  width: 100%;
+  background-color: #111827;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 16px 32px;
+
 }
 
-h2{
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 8px 0;
+  }
+}
+
+h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   font-weight: bolder;
 }
+
+
 
 
 /*cards*/
@@ -63,7 +92,8 @@ h2{
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Fundo escuro translúcido */
+  background: rgba(0, 0, 0, 0.7);
+  /* Fundo escuro translúcido */
   color: white;
   padding: 20px;
   opacity: 0;
@@ -89,12 +119,17 @@ h2{
   color: black;
 }
 
-.noticias{
-  color: #fff;
-  background-color: black;
+.noticias {
+   background-color: #0d1117; /* preto suave */
+  color: #ffffff;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
-footer{
+footer {
   background-color: black;
   text-align: center;
   z-index: -1;
